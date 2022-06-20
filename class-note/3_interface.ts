@@ -57,3 +57,20 @@ Object.keys(obj).forEach(element => {
 });
 
 // obj['cssFile']='a' // x
+
+// 인터페이스 확장
+interface Person {
+    name:string;
+    age:number;
+}
+
+// 인터페이스 상속 해주기 (extends)
+interface Developer extends Person{
+    lang:string;
+}
+
+let soonyong: Developer = {
+    name: "hi",
+    age: 30,
+    lang: "js"
+}
