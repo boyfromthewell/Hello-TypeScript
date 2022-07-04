@@ -104,5 +104,9 @@ class AddressBook {
   }
   /* ------------------------------------------------ */
 }
+let div = document.querySelector('div') as HTMLDivElement; // null일수도 있음(이때 쓰는것이 as)
+
+// div가 있다는 것을 보장 해줘야함
+div.innerHTML;
 
 new AddressBook();
